@@ -1,0 +1,36 @@
+[project]
+name = "Silica"
+version = "0.1.0"
+description = "Silica deps"
+dependencies = [
+    "accelerate",
+    "bitsandbytes",
+    "datasets",
+    "diffusers",
+    "easydict",
+    "ftfy",
+    "geffnet",
+    "gradio",
+    "gradio-client",
+    "gradio-imageslider",
+    "h5py",
+    "huggingface-hub",
+    "imageio",
+    "imageio-ffmpeg",
+    "Jinja2",
+    "matplotlib",
+    "numpy<2",
+    "omegaconf",
+    "open3d",
+    "opencv-python",
+    "pandas<2",
+    "peft",
+    "spaces",
+    "tabulate",
+    "torch",
+    "torchmetrics",
+    "torchvision",
+    "transformers",
+    "wandb",
+    "xformers"
+]

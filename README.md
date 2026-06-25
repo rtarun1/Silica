@@ -5,7 +5,7 @@
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/silica-mirage/silica
+git clone https://github.com/rtarun1/Silica
 ```
 
 2. Install the required dependencies:
@@ -13,10 +13,16 @@ git clone https://github.com/silica-mirage/silica
 curl -LsSf https://astral.sh/uv/install.sh | sh
 cd silica
 uv venv .venv
-uv pip install -r requirements.txt
+uv sync
 ```
 3. Try SILICA on your images:
 ```bash
 # minimum 5GB VRAM required
 bash infer.sh
 ```
+
+## Roadmap
+
+- [ ] Inference code + Dataset
+- [ ] Evaluation code
+- [ ] Training code

@@ -12,7 +12,6 @@ huggingface-hub
 imageio
 imageio-ffmpeg
 Jinja2
-matplotlib
 numpy<2
 omegaconf
 opencv-python

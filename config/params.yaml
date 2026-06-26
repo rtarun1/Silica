@@ -1,0 +1,20 @@
+/silica_node:
+  ros__parameters:
+    # Model (Provide HF Repo Name or absolute path to local cache)
+    pretrained_model_name_or_path: "silica-mirage/silica-v1-0"
+    enable_xformers: true
+    threshold: 0.5
+    processing_res: 768
+    timestep: 999
+    seed: 42
+    pc_step: 4
+
+    # Topic Subscriptions
+    rgb_topic_in: "/camera1/camera1/color/image_raw"
+    depth_topic_in: "/camera1/camera1/aligned_depth_to_color/image_raw"
+    camera_info_topic: "/camera1/camera1/color/camera_info"
+
+    # Topic Publications
+    rgb_topic_out: "image_glass"
+    depth_topic_out: "depth_glass"
+    pointcloud_topic_out: "points_glass"

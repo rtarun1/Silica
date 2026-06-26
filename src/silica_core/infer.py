@@ -10,8 +10,8 @@ import open3d as o3d
 from PIL import Image
 from tqdm import tqdm
 
-from model import SILICA
-from utils.image_utils import seed_all, colorize_depth_map
+from silica_core.model import SILICA
+from silica_core.utils.image_utils import seed_all, colorize_depth_map
 
 depth_scale = 1.0
 
@@ -122,8 +122,8 @@ def parse_args():
     parser.add_argument("--timestep", type=int, default=999)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--enable_xformers_memory_efficient_attention", action="store_true")
-    parser.add_argument("--input_gt_dir", type=str, default=None)
-    parser.add_argument("--input_gt_file", type=str, default=None)
+    parser.add_argument("--input_sensor_depth_dir", type=str, default=None)
+    parser.add_argument("--input_sensor_depth_file", type=str, default=None)
     parser.add_argument("--intrinsics_file", type=str, default=None, help="Path to a txt file containing fx fy cx cy separated by space")
     
     return parser.parse_args()
@@ -154,13 +154,13 @@ def main():
             relative_paths = [line.strip() for line in f if line.strip()]
             images = [input_dir / rel_path for rel_path in relative_paths]
             
-            if args.input_gt_dir:
-                if args.input_gt_file:
-                    with open(args.input_gt_file, 'r') as gf:
+            if args.input_sensor_depth_dir:
+                if args.input_sensor_depth_file:
+                    with open(args.input_sensor_depth_file, 'r') as gf:
                         gt_rel_paths = [line.strip() for line in gf if line.strip()]
-                    gt_images = [Path(args.input_gt_dir) / rel_path for rel_path in gt_rel_paths]
+                    gt_images = [Path(args.input_sensor_depth_dir) / rel_path for rel_path in gt_rel_paths]
                 else:
-                    gt_images = [Path(args.input_gt_dir) / Path(rel_path).with_suffix('.png') for rel_path in relative_paths]
+                    gt_images = [Path(args.input_sensor_depth_dir) / Path(rel_path).with_suffix('.png') for rel_path in relative_paths]
     else:
         print(f"==> Scanning directory: {args.input_dir}")
         images = sorted(list(input_dir.rglob("*.png")) + 
@@ -168,13 +168,13 @@ def main():
                         list(input_dir.rglob("*.JPEG")) + 
                         list(input_dir.rglob("*.jpeg")))
         
-        if args.input_gt_dir:
+        if args.input_sensor_depth_dir:
             for img_path in images:
                 rel_path = img_path.relative_to(input_dir)
-                gt_images.append(Path(args.input_gt_dir) / rel_path.with_suffix('.png'))
+                gt_images.append(Path(args.input_sensor_depth_dir) / rel_path.with_suffix('.png'))
 
     print(f"==> Found {len(images)} RGB images.")
-    if args.input_gt_dir:
+    if args.input_sensor_depth_dir:
         print(f"==> GT alignment enabled. Expecting {len(gt_images)} GT depth maps.")
     
     device = "cuda" 
@@ -188,7 +188,7 @@ def main():
 
     model.set_progress_bar_config(disable=True)
 
-    iterable = zip(images, gt_images) if args.input_gt_dir else zip(images, [None]*len(images))
+    iterable = zip(images, gt_images) if args.input_sensor_depth_dir else zip(images, [None]*len(images))
 
     for img_path, gt_path in tqdm(iterable, total=len(images)):
         pil = Image.open(img_path).convert("RGB")
@@ -240,7 +240,7 @@ def main():
         overlay[mask_bool] = ((1 - alpha) * overlay[mask_bool] + alpha * color).astype(np.uint8)
         Image.fromarray(overlay).save(os.path.join(overlay_path, f"{img_path.stem}.png"))
 
-        if args.input_gt_dir and gt_path and os.path.exists(gt_path):
+        if args.input_sensor_depth_dir and gt_path and os.path.exists(gt_path):
             gt_np = np.array(Image.open(gt_path)).astype(np.float32) / 1000.0
             
             background_mask = pred_mask == 0

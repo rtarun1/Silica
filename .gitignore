@@ -21,6 +21,8 @@ output_vis/
 *.mexa64
 *.pdf
 *.tar
+*.lock
+*egg*
 
 # ignore files and dirs with temp in the name
 *temp*

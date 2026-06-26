@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "Silica"
 version = "0.1.0"
@@ -33,6 +37,8 @@ dependencies = [
     "open3d"
 ]
 
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["infer", "model"]
+[tool.setuptools]
+packages = ["silica_core", "silica_ros"]
+
+[tool.setuptools.package-dir]
+"silica_core" = "src/silica_core"

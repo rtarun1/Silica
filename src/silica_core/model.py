@@ -6,7 +6,7 @@ import torch
 import torch.nn.functional as F
 from packaging import version
 from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
-from utils.image_utils import resize_max_res, get_tv_resample_method, resize_back, get_pil_resample_method
+from silica_core.utils.image_utils import resize_max_res, get_tv_resample_method, resize_back, get_pil_resample_method
 from torchvision.transforms.functional import resize
 from torchvision.transforms import InterpolationMode
 

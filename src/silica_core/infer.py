@@ -10,8 +10,8 @@ import open3d as o3d
 from PIL import Image
 from tqdm import tqdm
 
-from model import SILICA
-from utils.image_utils import seed_all, colorize_depth_map
+from silica_core.model import SILICA
+from silica_core.utils.image_utils import seed_all, colorize_depth_map
 
 depth_scale = 1.0
 

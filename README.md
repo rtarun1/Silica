@@ -71,14 +71,14 @@
 
 5.  Run the Silica demo launch file:
 
-    > [!WARNING]
-    > Please make sure that you have a camera and that the camera is publishing RGB images. You will also need (aligned) depth images to get the glass-aware point-cloud.
-    > 
-    > The topics can be set in the config file [`config/params.yaml`](config/params.yaml).
-
     ```bash
     ros2 launch silica_ros silica.launch.py
     ```
+
+> [!TIP]
+> Make sure that you have a camera and that the camera is publishing RGB images. You will also need (aligned) depth images to get the glass-aware point-cloud.
+> 
+> The topics can be set in the config file [`config/params.yaml`](config/params.yaml).
 
 ## Roadmap
 

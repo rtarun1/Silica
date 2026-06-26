@@ -24,15 +24,6 @@ def generate_launch_description():
         value='expandable_segments:True'
     )
 
-    realsense_launch_dir = os.path.join(get_package_share_directory('realsense2_camera'), 'launch')
-    realsense_node = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(realsense_launch_dir, 'rs_launch.py')),
-        launch_arguments={
-            'camera_name': 'camera1',
-            'camera_namespace': 'camera1'
-        }.items()
-    )
-
     # Use the config from our new package installation
     params_file_path = os.path.join(
         get_package_share_directory('silica_ros'),
@@ -62,7 +53,6 @@ def generate_launch_description():
     return LaunchDescription([
         declare_use_rviz_cmd,
         set_env_var,
-        realsense_node,
         ml_node,
         rviz_node
     ])

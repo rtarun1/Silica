@@ -7,10 +7,11 @@ package_name = 'silica_ros'
 setup(
     name=package_name,
     version='0.1.0',
-    packages=['silica_core', 'silica_ros'],
+    # List both packages
+    packages=['silica_ros', 'silica_core'],
+    # Only map silica_core, let setuptools find silica_ros automatically
     package_dir={
-        'silica_core': 'src/silica_core',
-        # Do NOT explicitly map silica_ros here; setuptools finds it automatically.
+        'silica_core': 'src/silica_core'
     },
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),

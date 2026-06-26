@@ -37,6 +37,6 @@ def generate_launch_description():
 
     return LaunchDescription([
         set_env_var,
-        # realsense_node,
+        realsense_node,
         ml_node,
     ])

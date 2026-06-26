@@ -2,6 +2,7 @@
 name = "Silica"
 version = "0.1.0"
 description = "Silica deps"
+requires-python = ">=3.10,<=3.12"
 dependencies = [
     "accelerate",
     "bitsandbytes",
@@ -17,20 +18,19 @@ dependencies = [
     "huggingface-hub",
     "imageio",
     "imageio-ffmpeg",
-    "Jinja2",
-    "matplotlib",
     "numpy<2",
     "omegaconf",
-    "open3d",
     "opencv-python",
-    "pandas<2",
     "peft",
     "spaces",
     "tabulate",
-    "torch",
+    "torch<2.10",
     "torchmetrics",
     "torchvision",
     "transformers",
     "wandb",
     "xformers"
 ]
+
+[tool.setuptools.packages.find]
+where = ["src"]

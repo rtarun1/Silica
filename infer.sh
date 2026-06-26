@@ -1,4 +1,3 @@
-
 export CUDA=0
 
 export CHECKPOINT_DIR="silica-mirage/silica-v1-0"

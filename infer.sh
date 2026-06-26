@@ -7,7 +7,7 @@ export INPUT_DEPTH="example/depth" # raw sensor depth
 export OUTPUT_DIR="example/output"
 export INTRINSICS_TXT="example/intrinsics.txt"
 
-CUDA_VISIBLE_DEVICES=$CUDA uv run python infer.py \
+CUDA_VISIBLE_DEVICES=$CUDA uv run python -m infer \
         --pretrained_model_name_or_path=$CHECKPOINT_DIR \
         --seed=42 \
         --input_dir=$INPUT_IMAGES \

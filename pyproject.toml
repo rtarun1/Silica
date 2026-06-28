@@ -37,8 +37,5 @@ dependencies = [
     "open3d"
 ]
 
-[tool.setuptools]
-packages = ["silica_core", "silica_ros"]
-
-[tool.setuptools.package-dir]
-"silica_core" = "src/silica_core"
+[tool.setuptools.packages.find]
+where = ["src"]

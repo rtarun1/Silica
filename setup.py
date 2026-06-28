@@ -8,7 +8,7 @@ setup(
     name=package_name,
     version='0.1.0',
     # List both packages
-    packages=['silica_ros', 'silica_core'],
+    packages=['silica_ros', 'silica_core', 'silica_core.utils'],
     # Only map silica_core, let setuptools find silica_ros automatically
     package_dir={
         'silica_core': 'src/silica_core'

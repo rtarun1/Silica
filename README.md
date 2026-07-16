@@ -75,13 +75,13 @@
     ros2 launch silica_ros silica.launch.py
     ```
 
-> [!TIP]
+> [!NOTE]
 > Make sure that you have a camera and that the camera is publishing RGB images. You will also need (aligned) depth images to get the glass-aware point-cloud.
 > 
 > The topics can be set in the config file [`config/params.yaml`](config/params.yaml).
 
 ## Roadmap
 
-- [ ] Inference code + Dataset
-- [ ] Evaluation code
-- [ ] Training code
+- [x] Inference code + [Mirage18k Dataset](https://huggingface.co/datasets/rtarun1/mirage18k)
+- [x] ROS2 Integration
+- [ ] Training & Evaluation code

@@ -29,7 +29,7 @@ class SilicaNode(Node):
         
         # --- Parameters ---
         # Note: Model path defaults to HuggingFace hub repo name or local dir
-        self.declare_parameter('pretrained_model_name_or_path', 'silica-mirage/silica-v1-0')
+        self.declare_parameter('pretrained_model_name_or_path', 'rtarun1/silica-v1-0')
         self.declare_parameter('threshold', 0.5)
         self.declare_parameter('processing_res', 512)
         self.declare_parameter('timestep', 999)

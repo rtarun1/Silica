@@ -1,6 +1,6 @@
 export CUDA=0
 
-export CHECKPOINT_DIR="silica-mirage/silica-v1-0"
+export CHECKPOINT_DIR="rtarun1/silica-v1-0"
 export INPUT_IMAGES="example/images"
 export INPUT_DEPTH="example/depth" # raw sensor depth
 export OUTPUT_DIR="example/output"

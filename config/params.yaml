@@ -1,7 +1,7 @@
 /silica_node:
   ros__parameters:
     # Model (Provide HF Repo Name or absolute path to local cache)
-    pretrained_model_name_or_path: "silica-mirage/silica-v1-0"
+    pretrained_model_name_or_path: "rtarun1/silica-v1-0"
     enable_xformers: true
     threshold: 0.5
     processing_res: 768

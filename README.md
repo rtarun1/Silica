@@ -1,4 +1,28 @@
-# SILICA: Repurposing Diffusion Priors for Joint Glass Segmentation and Depth Estimation
+<p align="center">
+<h1 align="center"><strong>SILICA: Repurposing Diffusion Priors for Joint Glass Segmentation and Depth Estimation</strong></h1>
+  <p align="center">
+      	<strong>IROS 2026</strong><br>
+    <a href="https://scholar.google.com/citations?user=wqTCR1sAAAAJ&hl=en" target="_blank">Tarun R</a><sup>1</sup>, 
+            <a href="https://scholar.google.com/citations?user=KI2RjboAAAAJ&hl=en" target="_blank">Anuj Verma</a><sup>1</sup>, 
+            <a href="https://scholar.google.com/citations?user=XCF-6gcAAAAJ&hl=en" target="_blank">Laksh Nanwani</a><sup>1</sup>, 
+            <a href="https://scholar.google.com/citations?user=oVS3HHIAAAAJ&hl=en" target="_blank">Sourav Garg</a><sup>1</sup>,  
+            <a href="https://scholar.google.co.in/citations?user=QDuPGHwAAAAJ&hl=en" target="_blank">Madhava Krishna</a><sup>1</sup>
+    <br>
+    <sup>1</sup> Robotics Research Center (RRC), IIIT Hyderabad, India
+    <br>
+  </p>
+</p>
+
+
+<div id="top" align="center">
+
+[![Project](https://img.shields.io/badge/Project-%239c403d?style=flat&logoColor=%23FA7F6F
+)](https://silica-mirage.github.io/)
+[![Dataset](https://img.shields.io/badge/Dataset-548B54?style=flat
+)](https://huggingface.co/datasets/rtarun1/mirage18k/)
+[![GitHub star chart](https://img.shields.io/github/stars/InternRobotics/NavDP?style=square)](https://github.com/rtarun1/Silica)
+</div>
+
 
 ## Setup
 

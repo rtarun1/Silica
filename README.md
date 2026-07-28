@@ -18,6 +18,8 @@
 
 [![Project](https://img.shields.io/badge/Project-%239c403d?style=flat&logoColor=%23FA7F6F
 )](https://silica-mirage.github.io/)
+[![arXiv](https://img.shields.io/badge/Arxiv-%233b6291?style=flat&logoColor=%23FA7F6F
+)](https://arxiv.org/abs/2607.24249)
 [![Dataset](https://img.shields.io/badge/Dataset-548B54?style=flat
 )](https://huggingface.co/datasets/rtarun1/mirage18k/)
 </div>

@@ -1,13 +1,15 @@
 
 # ignore these folders
-/checkpoint
+/checkpoints
 /data
 /input
 /output
+/datasets
 /temp
 /wandb
 /venv
 /cache
+/eval_results
 __pycache__/
 output_vis/
 **/.ipynb_checkpoints/
@@ -23,6 +25,6 @@ output_vis/
 *.tar
 *.lock
 *egg*
-
+.venv
 # ignore files and dirs with temp in the name
 *temp*

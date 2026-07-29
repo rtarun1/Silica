@@ -22,10 +22,8 @@ setup(
     ],
     install_requires=['setuptools'], 
     zip_safe=True,
-    maintainer='Your Name',
-    maintainer_email='dev@todo.todo',
-    description='Silica ML Core and ROS 2 Wrapper',
-    license='TODO: License declaration',
+    maintainer='Tarun R',
+    maintainer_email='tarun.ramak@gmail.com',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

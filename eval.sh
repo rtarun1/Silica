@@ -15,8 +15,5 @@ uv run python -m silica_core.eval \
   --dataset_base_dir=$DATASET_BASE_DIR \
   --output_dir=$OUTPUT_DIR \
   --alignment=$ALIGNMENT \
-  --threshold=$THRESHOLD \
-  --segmentation_task="$SEG_TASK" \
-  --depth_task="$DEPTH_TASK" \
   --generate \
   --seed=42

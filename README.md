@@ -2,13 +2,13 @@
 <h1 align="center"><strong>SILICA: Repurposing Diffusion Priors for Joint Glass Segmentation and Depth Estimation</strong></h1>
   <p align="center">
       	<!-- <strong>Accepted at IROS 2026</strong><br> -->
-    <a href="https://scholar.google.com/citations?user=wqTCR1sAAAAJ&hl=en" target="_blank">Tarun R</a><sup>1</sup>, 
-            <a href="https://scholar.google.com/citations?user=KI2RjboAAAAJ&hl=en" target="_blank">Anuj Verma</a><sup>1</sup>, 
-            <a href="https://scholar.google.com/citations?user=XCF-6gcAAAAJ&hl=en" target="_blank">Laksh Nanwani</a><sup>1</sup>, 
-            <a href="https://scholar.google.com/citations?user=oVS3HHIAAAAJ&hl=en" target="_blank">Sourav Garg</a><sup>1</sup>,  
-            <a href="https://scholar.google.co.in/citations?user=QDuPGHwAAAAJ&hl=en" target="_blank">Madhava Krishna</a><sup>1</sup>
+    <a href="https://www.linkedin.com/in/rtarun1/" target="_blank">Tarun R</a>, 
+            <a href="https://scholar.google.com/citations?user=KI2RjboAAAAJ&hl=en" target="_blank">Anuj Verma</a>, 
+            <a href="https://scholar.google.com/citations?user=XCF-6gcAAAAJ&hl=en" target="_blank">Laksh Nanwani</a>, 
+            <a href="https://scholar.google.com/citations?user=oVS3HHIAAAAJ&hl=en" target="_blank">Sourav Garg</a>,  
+            <a href="https://scholar.google.co.in/citations?user=QDuPGHwAAAAJ&hl=en" target="_blank">Madhava Krishna</a>
     <br>
-    <sup>1</sup> Robotics Research Center (RRC), IIIT Hyderabad, India
+    Robotics Research Center (RRC), IIIT Hyderabad, India
     <br>
   </p>
 </p>
@@ -161,4 +161,4 @@ If you find our work useful in your research, please consider citing our paper:
 
 ## 👏 Acknowledgement
 
-We thank the authors of [Marigold](https://github.com/prs-eth/Marigold), [Lotus](https://github.com/EnVision-Research/Lotus) and [Stable Diffusion](https://github.com/huggingface/diffusers/tree/main/examples/text_to_image) for their research and for open-sourcing the code and pretrained models used in this work.
+We thank the authors of [Marigold](https://github.com/prs-eth/Marigold), [Lotus](https://github.com/EnVision-Research/Lotus) and [Stable Diffusion](https://github.com/huggingface/diffusers/tree/main/examples/text_to_image) for their valuable research and for open-sourcing the code and pretrained models that made this work possible.

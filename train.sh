@@ -14,7 +14,6 @@ export TRAIN_DATA_DIR_REF3D="datasets/3dref"
 export TRAIN_DATA_DIR_M18K="datasets/mirage18k"
 export TRAIN_DATA_DIR_GWD="datasets/gw_depth"
 
-export RESOLUTION=768
 export NORMTYPE="trunc_disparity"
 export MIXED_PRECISION="fp16"
 
@@ -23,6 +22,7 @@ export GAS=2
 export LR=3e-5
 export STEPS=20000
 export TIMESTEP=999 
+export RESOLUTION=768
 export TASK_NAME="glass_segmentation+depth"
 
 mkdir -p $OUTPUT_DIR
@@ -54,8 +54,8 @@ uv run accelerate launch \
   --timestep=$TIMESTEP \
   --task_name=$TASK_NAME \
   --checkpointing_steps=1000 \
-  --checkpoints_total_limit=0 \
-  --validation_steps=1000 \
+  --checkpoints_total_limit=1 \
+  --validation_steps=500 \
   --allow_tf32 \
   --seed=42 \
   --random_flip

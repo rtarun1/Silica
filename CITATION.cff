@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software, model, or dataset in your research, please cite our IROS 2026 paper."
+title: "SILICA: Repurposing Diffusion Priors for Joint Glass Segmentation and Depth Estimation"
+authors:
+  - family-names: "R"
+    given-names: "Tarun"
+  - family-names: "Verma"
+    given-names: "Anuj"
+  - family-names: "Nanwani"
+    given-names: "Laksh"
+  - family-names: "Garg"
+    given-names: "Sourav"
+  - family-names: "Krishna"
+    given-names: "K. Madhava"
+repository-code: "https://github.com/rtarun1/Silica"
+url: "https://silica-mirage.github.io/"
+license: "CC-BY-NC-SA-4.0"
+preferred-citation:
+  type: conference-paper
+  title: "SILICA: Repurposing Diffusion Priors for Joint Glass Segmentation and Depth Estimation"
+  authors:
+    - family-names: "R"
+      given-names: "Tarun"
+    - family-names: "Verma"
+      given-names: "Anuj"
+    - family-names: "Nanwani"
+      given-names: "Laksh"
+    - family-names: "Garg"
+      given-names: "Sourav"
+    - family-names: "Krishna"
+      given-names: "K. Madhava"
+  collection-title: "2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+  year: 2026
+  start: 5031
+  end: 5038
+  doi: "10.1109/IROS61738.2026.11776824"
+  identifiers:
+    - type: doi
+      value: "10.1109/IROS61738.2026.11776824"
+    - type: other
+      value: "arXiv:2607.24249"
+      description: "arXiv preprint"
